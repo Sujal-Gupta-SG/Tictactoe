@@ -18,7 +18,7 @@ This project is a basic implementation of the classic Tic-Tac-Toe game. It allow
 1. Clone the repository:
 
     ```bash
-    https://github.com/Sujal092004/Repositories/tree/main/Html%20Css%20Javascript/Tic%20Tac%20Toe
+    https://github.com/Sujal092004/Tictactoe/tree/main
     ```
 
 2. Open the `index.html` file in a web browser.
