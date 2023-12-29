@@ -23,12 +23,16 @@ const winPatterns = [
 ];
 
 const startgame = () => {
-  user.classList.add("hide");
-  let ply1 = user1.value;
-  let ply2 = user2.value;
+  if (user1.value.trim() !== "" && user2.value.trim() !== "") {
+    user.classList.add("hide");
+    let ply1 = user1.value;
+    let ply2 = user2.value;
 
-  console.log(`Player 1: ${ply1}, Player 2: ${ply2}`);
-  document.querySelector(".tictactoe").classList.remove("hide");
+    console.log(`Player 1: ${ply1}, Player 2: ${ply2}`);
+    document.querySelector(".tictactoe").classList.remove("hide");
+  } else {
+    alert("Please enter names for both players.");
+}
 };
 
 const resetGame = () => {
