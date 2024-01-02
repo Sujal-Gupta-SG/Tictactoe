@@ -9,6 +9,11 @@
   font-size: 1.5rem;
 }
 
+main {
+  display: flex;
+
+}
+
 
 #userbtn {
   padding: 0.9rem;
@@ -21,6 +26,28 @@
   cursor: pointer;
 }
 
+.left,
+.right {
+  height: 100vh;
+  width: 25vw;
+  background-color: #FFFFC7;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+#p1name,#p2name {
+  
+  height: 10vh;
+  display: flex;
+  margin-top: 38vh;
+  font-size: 30px;
+  color: #548687;
+  justify-content: center;
+}
+
+
 
 input {
   border-radius: 0.2rem;
@@ -28,10 +55,10 @@ input {
   -moz-border-radius: 0.2rem;
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
-  border:none;
+  border: none;
   height: 1.5rem;
   cursor: text;
-  background-color:#f0fac2;
+  background-color: #f0fac2;
 }
 
 body {
@@ -42,7 +69,7 @@ body {
 .container {
   height: 70vh;
   display: flex;
-
+  width: 60vw;
   justify-content: center;
   align-items: center;
 }
