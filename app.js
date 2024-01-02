@@ -7,6 +7,8 @@ let user1 = document.getElementById("firstuser");
 let user2 = document.getElementById("seconduser");
 let user = document.querySelector(".user");
 let user_but = document.getElementById("userbtn");
+let p1name = document.getElementById("p1name")
+let p2name = document.getElementById("p2name")
 
 let turnO = true; //playerX, playerO
 let count = 0; //To Track Draw
@@ -27,12 +29,14 @@ const startgame = () => {
     user.classList.add("hide");
     let ply1 = user1.value;
     let ply2 = user2.value;
+    p1name.innerText=user1.value;
+    p2name.innerText=user2.value;
 
     console.log(`Player 1: ${ply1}, Player 2: ${ply2}`);
     document.querySelector(".tictactoe").classList.remove("hide");
   } else {
     alert("Please enter names for both players.");
-}
+  }
 };
 
 const resetGame = () => {
