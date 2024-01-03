@@ -1,20 +1,22 @@
+/* Resetting default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
-.user>p {
+/* Styling for user section paragraphs */
+.user > p {
   margin-top: 50px;
   color: #F7FED8;
   font-size: 1.5rem;
 }
 
+/* Flex layout for the main content section */
 main {
   display: flex;
-
 }
 
-
+/* Styling for submit button */
 #userbtn {
   padding: 0.9rem;
   margin-top: 50px;
@@ -26,6 +28,7 @@ main {
   cursor: pointer;
 }
 
+/* Styles for left and right sections showing "X" and "O" */
 .left,
 .right {
   height: 100vh;
@@ -34,11 +37,10 @@ main {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-
 }
 
-#p1name,#p2name {
-  
+/* Styles for player names */
+#p1name, #p2name {
   height: 10vh;
   display: flex;
   margin-top: 38vh;
@@ -47,34 +49,43 @@ main {
   justify-content: center;
 }
 
+/* Styles for displaying current player's turn */
+#turn {
+  margin-top: 20px;
+  color: #ffffc7;
+  height: max-content;
+  width: max-content;
+  text-align: center;
+}
 
-
+/* Styles for input elements */
 input {
   border-radius: 0.2rem;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
   border: none;
   height: 1.5rem;
   cursor: text;
   background-color: #f0fac2;
 }
 
+/* Body styles */
 body {
   background-color: #548687;
   text-align: center;
 }
 
+/* Styles for the main game container */
 .container {
   height: 70vh;
   display: flex;
   width: 60vw;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+/* Styles for the game grid */
 .game {
+  margin-top: 25px;
   height: 60vmin;
   width: 60vmin;
   display: flex;
@@ -84,6 +95,7 @@ body {
   gap: 1.5vmin;
 }
 
+/* Styles for individual boxes in the game grid */
 .box {
   height: 18vmin;
   width: 18vmin;
@@ -95,6 +107,7 @@ body {
   background-color: #ffffc7;
 }
 
+/* Styles for reset button */
 #reset-btn {
   padding: 1rem;
   font-size: 1.25rem;
@@ -104,6 +117,7 @@ body {
   border: none;
 }
 
+/* Styles for new game button */
 #new-btn {
   padding: 1rem;
   font-size: 1.25rem;
@@ -113,11 +127,13 @@ body {
   border: none;
 }
 
+/* Styles for winner/draw message */
 #msg {
   color: #ffffc7;
   font-size: 5vmin;
 }
 
+/* Styles for message container */
 .msg-container {
   height: 100vmin;
   display: flex;
@@ -127,6 +143,7 @@ body {
   gap: 4rem;
 }
 
+/* Hide class to initially hide elements */
 .hide {
   display: none;
 }
