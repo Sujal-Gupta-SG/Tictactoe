@@ -126,14 +126,12 @@ const checkWinner = () => {
     let pos1Val = boxes[pattern[0]].innerText;
     let pos2Val = boxes[pattern[1]].innerText;
     let pos3Val = boxes[pattern[2]].innerText;
-    let ply1 = user1.value;
-    let ply2 = user2.value;
     if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         if (pos1Val === "O") {
-          showWinner(ply1);
-        } else {
           showWinner(ply2);
+        } else {
+          showWinner(ply1);
         }
         return true;
       }
