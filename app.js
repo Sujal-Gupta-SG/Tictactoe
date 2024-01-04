@@ -11,6 +11,7 @@ let user_but = document.getElementById("userbtn");
 let p1name = document.getElementById("p1name");
 let p2name = document.getElementById("p2name");
 let turn = document.getElementById("turn");
+let line = document.querySelector(".line");
 
 // Game variables
 let countTurn = 0; // Count the turns
@@ -20,14 +21,14 @@ var ply1, ply2; // Player names
 
 // Winning patterns for the tic-tac-toe grid
 const winPatterns = [
-  [0, 1, 2],
-  [0, 3, 6],
-  [0, 4, 8],
-  [1, 4, 7],
-  [2, 5, 8],
-  [2, 4, 6],
-  [3, 4, 5],
-  [6, 7, 8],
+  [0, 1, 2, "Y", -23, 0],
+  [0, 3, 6, "X", -19.5, 90],
+  [0, 4, 8, "X", 2.3, 47.4],
+  [1, 4, 7, "X", 0, 90],
+  [2, 5, 8, "X", 19.5, 90],
+  [2, 4, 6, "X", -2.5, 133.9],
+  [3, 4, 5, "Y", -2.8, 0],
+  [6, 7, 8, "Y", 18, 0],
 ];
 
 // Function to start the game
@@ -57,6 +58,7 @@ const resetGame = () => {
   turn.innerText = `${ply2} Turn ( O )`;
   enableBoxes();
   msgContainer.classList.add("hide");
+  line.classList.remove("show-line");
 };
 
 // Event listeners for each box on the tic-tac-toe grid
@@ -94,8 +96,10 @@ boxes.forEach((box) => {
 // Function to handle a draw
 const gameDraw = () => {
   msg.innerText = `Game was a Draw.`;
+  turn.innerText = `Game was a Draw.`;
   msgContainer.classList.remove("hide");
   disableBoxes();
+  // Comment: Removed transition for draw
 };
 
 // Function to disable all boxes
@@ -113,11 +117,13 @@ const enableBoxes = () => {
   }
 };
 
-// Function to display the winner
+//Function to display the winner
 const showWinner = (winner) => {
   msg.innerText = `Congratulations, Winner is ${winner}`;
+  turn.innerText = `Winner is ${winner}`;
   msgContainer.classList.remove("hide");
   disableBoxes();
+  // Comment: Removed transition for winner
 };
 
 // Function to check for a winner
@@ -129,10 +135,17 @@ const checkWinner = () => {
     if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         if (pos1Val === "O") {
+          line.classList.add("show-line");
+          line.style.width = "22vw";
+          line.style.transform = `translate${pattern[3]}(${pattern[4]}vh) rotate(${pattern[5]}deg)`;
           showWinner(ply2);
         } else {
+          line.classList.add("show-line");
+          line.style.width = "22vw";
+          line.style.transform = `translate${pattern[3]}(${pattern[4]}vh) rotate(${pattern[5]}deg)`;
           showWinner(ply1);
         }
+
         return true;
       }
     }
