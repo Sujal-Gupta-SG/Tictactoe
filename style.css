@@ -138,7 +138,7 @@ body {
   z-index: 2;
   transform: translateY(0) rotate(0);
   display: none;
-  transition: width 7s linear;
+  
 
 }
 
