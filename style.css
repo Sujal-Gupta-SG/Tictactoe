@@ -174,3 +174,10 @@ img {
 .hide {
   display: none;
 }
+
+@media (max-width: 555px) {
+  body {
+    display: none;
+  }
+}
+
