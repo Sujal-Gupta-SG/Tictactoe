@@ -12,68 +12,95 @@
 </head>
 
 <body>
-  <!-- User input section -->
-  <div class="user">
-    <h1>Tic Tac Toe</h1>
-    <!-- Input for the first player's name -->
-    <p>Enter First Player name : <input type="text" id="firstuser"></p>
-    <!-- Input for the second player's name -->
-    <p>Enter Second Player name : <input type="text" id="seconduser"></p>
-    <!-- Button to submit user names -->
-    <button id="userbtn">Submit</button>
-  </div>
+  <!-- 404 page start -->
+  <section class="page_404">
+    <div class="container1">
+      <div class="row">
+        <div class="col-sm-12 ">
+          <div class="col-sm-10 col-sm-offset-1  text-center">
+            <div class="four_zero_four_bg">
+              <h1 class="text-center ">404</h1>
+            </div>
 
-  <!-- Game section, initially hidden -->
-  <div class="tictactoe hide">
-    <!-- Container for messages, initially hidden -->
-    <div class="msg-container hide">
-      <!-- Display the winner or draw message -->
-      <p id="msg">Winner</p>
-      <!-- Image for winning animation -->
-      <img src="win.gif">
-      <!-- Button to start a new game -->
-      <button id="new-btn">New Game</button>
-    </div>
+            <div class="contant_box_404">
+              <h3 class="h2">
+                Look like you're lost
+              </h3>
 
-    <!-- Main game section -->
-    <main>
-      <!-- Left section showing "X" and the first player's name -->
-      <div class="left">X<span id="p1name"></span></div>
+              <p>the page you are looking only get visible on desktop screen</p>
 
-      <!-- Central section containing the game grid and turn information -->
-      <div>
-        <h1>Tic Tac Toe</h1>
-        <!-- Container for the game grid and turn information -->
-        <div class="container">
-          <!-- Display the current player's turn -->
-          <span id="turn"></span>
-          
-          <!-- Game grid -->
-          <div class="game">
-            <!-- Div for the winning line animation -->
-            <div class="line" id="line"></div>
-            <!-- Individual buttons representing the tic-tac-toe grid -->
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+              <a href="" class="link_404">Go to Home</a>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Button to reset the game -->
-        <button id="reset-btn">Reset Game</button>
+  <!-- 404 page end  -->
+
+
+  <div class="second">
+    <!-- User input section -->
+    <div class="user">
+      <h1>Tic Tac Toe</h1>
+      <!-- Input for the first player's name -->
+      <p>Enter First Player name : <input type="text" id="firstuser"></p>
+      <!-- Input for the second player's name -->
+      <p>Enter Second Player name : <input type="text" id="seconduser"></p>
+      <!-- Button to submit user names -->
+      <button id="userbtn">Submit</button>
+    </div>
+
+    <!-- Game section, initially hidden -->
+    <div class="tictactoe hide">
+      <!-- Container for messages, initially hidden -->
+      <div class="msg-container hide">
+        <!-- Display the winner or draw message -->
+        <p id="msg">Winner</p>
+        <!-- Button to start a new game -->
+        <img src="win.gif">
+        <button id="new-btn">New Game</button>
       </div>
 
-      <!-- Right section showing "O" and the second player's name -->
-      <div class="right">O<span id="p2name"></span></div>
-    </main>
-  </div>
+      <!-- Main game section -->
+      <main>
+        <!-- Left section showing "X" and the first player's name -->
+        <div class="left">X<span id="p1name"></span></div>
 
+        <!-- Central section containing the game grid and turn information -->
+        <div>
+          <h1>Tic Tac Toe</h1>
+          <!-- Container for the game grid and turn information -->
+          <div class="container">
+            <!-- Display the current player's turn -->
+            <span id="turn"></span>
+
+            <!-- Game grid -->
+            <div class="game">
+              <div class="line" id="line"></div>
+              <!-- Individual buttons representing the tic-tac-toe grid -->
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+            </div>
+          </div>
+
+          <!-- Button to reset the game -->
+          <button id="reset-btn">Reset Game</button>
+        </div>
+
+        <!-- Right section showing "O" and the second player's name -->
+        <div class="right">O<span id="p2name"></span></div>
+      </main>
+    </div>
+  </div>
   <!-- Script tag linking the JavaScript file -->
   <script src="app.js"></script>
 </body>
