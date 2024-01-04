@@ -22,14 +22,14 @@ var ply1, ply2; // Player names
 
 // Winning patterns for the tic-tac-toe grid
 const winPatterns = [
-  [0, 1, 2, "Y", -23, 0],
-  [0, 3, 6, "X", -19.5, 90],
-  [0, 4, 8, "X", 2.3, 47.4],
-  [1, 4, 7, "X", 0, 90],
-  [2, 5, 8, "X", 19.5, 90],
-  [2, 4, 6, "X", -2.5, 133.9],
-  [3, 4, 5, "Y", -2.8, 0],
-  [6, 7, 8, "Y", 18, 0],
+  [0, 1, 2, 0, -144, 0],
+  [0, 3, 6, -125, -12, 90],
+  [0, 4, 8, 0, -12, 47],
+  [1, 4, 7, 1, -12, 90],
+  [2, 5, 8, 125, -12, 90],
+  [2, 4, 6, 0, -12, 133],
+  [3, 4, 5, 0, -12, 0],
+  [6, 7, 8, 1, 121, 0],
 ];
 
 // Function to start the game
@@ -135,13 +135,13 @@ const checkWinner = () => {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         if (pos1Val === "O") {
           line.classList.add("show-line");
-          line.style.width = "250px";
-          line.style.transform = `translate${pattern[3]}(${pattern[4]}vh) rotate(${pattern[5]}deg)`;
+          line.style.width = "359px";
+          line.style.transform = `translate(${pattern[3]}px,${pattern[4]}px) rotate(${pattern[5]}deg)`;
           showWinner(ply2);
         } else {
           line.classList.add("show-line");
-          line.style.width = "250px";
-          line.style.transform = `translate${pattern[3]}(${pattern[4]}vh) rotate(${pattern[5]}deg)`;
+          line.style.width = "359px";
+          line.style.transform = `translate(${pattern[3]}px,${pattern[4]}px) rotate(${pattern[5]}deg)`;
           showWinner(ply1);
         }
 
