@@ -5,7 +5,7 @@
 }
 
 /* Styling for user section paragraphs */
-.user > p {
+.user>p {
   margin-top: 50px;
   color: #F7FED8;
   font-size: 1.5rem;
@@ -40,7 +40,8 @@ main {
 }
 
 /* Styles for player names */
-#p1name, #p2name {
+#p1name,
+#p2name {
   height: 10vh;
   display: flex;
   margin-top: 38vh;
@@ -51,7 +52,7 @@ main {
 
 /* Styles for displaying current player's turn */
 #turn {
-  margin-top: 20px;
+  margin-top: -60vh;
   color: #ffffc7;
   height: max-content;
   width: max-content;
@@ -83,9 +84,28 @@ body {
   flex-direction: column;
 }
 
+/* Styles for the line indicating a win */
+.line {
+  background-color: black;
+  width: 0;
+  height: 2px;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(0) rotate(0);
+  display: none;
+  transition: width 7s linear;
+}
+
+/* Styles for showing the line */
+.show-line {
+  display: inline;
+  /* Add your other styles for the line animation */
+}
+
 /* Styles for the game grid */
 .game {
-  margin-top: 25px;
+  margin-top: 50px;
   height: 60vmin;
   width: 60vmin;
   display: flex;
@@ -93,6 +113,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.5vmin;
+  position: absolute;
 }
 
 /* Styles for individual boxes in the game grid */
@@ -140,7 +161,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
+}
+
+/* Styles for winner/draw image */
+img {
+  height: 200px;
+  width: 200px;
 }
 
 /* Hide class to initially hide elements */
