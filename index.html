@@ -29,6 +29,8 @@
     <div class="msg-container hide">
       <!-- Display the winner or draw message -->
       <p id="msg">Winner</p>
+      <!-- Image for winning animation -->
+      <img src="win.gif">
       <!-- Button to start a new game -->
       <button id="new-btn">New Game</button>
     </div>
@@ -45,9 +47,11 @@
         <div class="container">
           <!-- Display the current player's turn -->
           <span id="turn"></span>
-
+          
           <!-- Game grid -->
           <div class="game">
+            <!-- Div for the winning line animation -->
+            <div class="line" id="line"></div>
             <!-- Individual buttons representing the tic-tac-toe grid -->
             <button class="box"></button>
             <button class="box"></button>
