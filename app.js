@@ -13,6 +13,7 @@ let p2name = document.getElementById("p2name");
 let turn = document.getElementById("turn");
 let line = document.querySelector(".line");
 
+
 // Game variables
 let countTurn = 0; // Count the turns
 let turnO = true; // Player turns (X or O)
@@ -99,7 +100,6 @@ const gameDraw = () => {
   turn.innerText = `Game was a Draw.`;
   msgContainer.classList.remove("hide");
   disableBoxes();
-  // Comment: Removed transition for draw
 };
 
 // Function to disable all boxes
@@ -123,7 +123,6 @@ const showWinner = (winner) => {
   turn.innerText = `Winner is ${winner}`;
   msgContainer.classList.remove("hide");
   disableBoxes();
-  // Comment: Removed transition for winner
 };
 
 // Function to check for a winner
@@ -136,12 +135,12 @@ const checkWinner = () => {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         if (pos1Val === "O") {
           line.classList.add("show-line");
-          line.style.width = "22vw";
+          line.style.width = "250px";
           line.style.transform = `translate${pattern[3]}(${pattern[4]}vh) rotate(${pattern[5]}deg)`;
           showWinner(ply2);
         } else {
           line.classList.add("show-line");
-          line.style.width = "22vw";
+          line.style.width = "250px";
           line.style.transform = `translate${pattern[3]}(${pattern[4]}vh) rotate(${pattern[5]}deg)`;
           showWinner(ply1);
         }
@@ -156,3 +155,4 @@ const checkWinner = () => {
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
 user_but.addEventListener("click", startgame);
+
