@@ -8,9 +8,7 @@ This documentation provides information about the implementation and usage of th
 
 To clone the repository, use the following command:
 
-```
-git clone https://github.com/Sujal092004/Tictactoe.git
-```
+
 ## Live Demo
 The game is live and can be played at Tic-Tac-Toe Game.
 
