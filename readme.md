@@ -12,13 +12,16 @@ To clone the repository, use the following command:
 ## Live Demo
 The game is live and can be played at Tic-Tac-Toe Game.
 
+## website
+
+
 ## Project Structure
 The project is organized with the following structure:
 
-### HTML file: index.html
-### CSS file: style.css
-### JavaScript file: app.js
-### GIF for winner celebration: win.gif
+#### HTML file: index.html
+#### CSS file: style.css
+#### JavaScript file: app.js
+#### GIF for winner celebration: win.gif
 ## Styling
 CSS styles (style.css) are used to define the layout and appearance of the game. Key styling points include:
 
