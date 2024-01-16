@@ -13,7 +13,7 @@ To clone the repository, use the following command:
 The game is live and can be played at Tic-Tac-Toe Game.
 
 ## website
-
+https://sujal-gupta-sg.github.io/Tictactoe/
 
 ## Project Structure
 The project is organized with the following structure:
